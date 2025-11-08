@@ -9,3 +9,15 @@ All process maintain their separated memory. To allow sharing of data between ot
 Spawning Process(spawn.py):
 Spawning a process means to create a segregated execution workflow within the program. for example, in python when Multiprocessing.process is used python spawns process to run multiple tasks at a time. Each task has its own dedicated memory.
 ![alt text](image-2.png)
+
+Daemon:
+A process that runs in the background, which does'nt require any direct user interaction.
+
+Background process without Daemon:
+If a background process runs without Daemon it requires manual termination, if it isn't terminated the main program waits for it to be completed/ terminated to continue.
+![alt text](image-3.png)
+
+
+Background process with Daemon:
+If a background process runs with Daemon it does not require manual termination, it terminates automatically once the thread is complete.
+![alt text](image-4.png)
